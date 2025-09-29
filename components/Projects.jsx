@@ -52,7 +52,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="h-80 w-full bg-no-repeat bg-cover bg-center rounded-xl relative cursor-pointer group shadow-md"
+            className="h-90 w-full bg-no-repeat bg-cover bg-center rounded-xl relative cursor-pointer group shadow-md"
             style={{ backgroundImage: `url(${project.image})` }}
             variants={{
               hidden: { opacity: 0, y: 30, scale: 0.95 },

@@ -102,7 +102,7 @@ export const workData = [
 export const projects = [
   {
     name: "কাঁচাবাজার",
-    image: "https://i.ibb.co/gMxzMXwG/haatbazar.png",
+    image: "https://i.ibb.co.com/4nkHHVJP/Chat-GPT-Image-Sep-30-2025-01-23-39-AM.png",
     techStack: ["React.js", "MongoDB", "Node.js", "Express.js", "Firebase", "TailwindCSS"],
     description: "E-commerce platform with smooth checkout and payment integration.",
     liveLink: "https://kachabazaar-app.web.app/",
@@ -112,7 +112,7 @@ export const projects = [
   },
   {
     name: "Virtual BookShelf",
-    image: "https://i.ibb.co.com/SXFnFwXh/libree.png",
+    image: "https://i.ibb.co.com/B5hHWVqf/access-online-bookshelf-across-devices.png",
     techStack: ["React.js", "MongoDB", "Node.js", "Express.js", "Firebase", "TailwindCSS"],
     description: "Social media platform focused on creative communities.",
     liveLink: "https://virtual-bookshelf-87634.web.app/",
