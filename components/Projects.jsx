@@ -2,7 +2,7 @@
 
 import { assets, projects } from "@/assets/assets";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Projects = () => {
@@ -10,6 +10,18 @@ const Projects = () => {
 
   const openModal = (project) => setSelectedProject(project);
   const closeModal = () => setSelectedProject(null);
+
+  // 🔒 Lock scroll when modal is open
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedProject]);
 
   return (
     <section id="projects" className="mb-15 scroll-mt-16 lg:scroll-mt-24">
