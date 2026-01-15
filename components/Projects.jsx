@@ -87,12 +87,14 @@ const Projects = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            onClick={closeModal}   // THIS IS IMPORTANT
           >
             <motion.div
               className="bg-white dark:bg-[#1a1a1a] rounded-xl max-w-3xl w-full overflow-y-auto max-h-[90vh] p-6 relative"
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 50, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}   // THIS PREVENTS CLOSING WHEN CLICKING INSIDE
             >
               <button
                 className="absolute top-4 right-2 text-gray-600 dark:text-gray-300 font-bold text-xl"
