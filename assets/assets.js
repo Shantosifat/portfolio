@@ -114,8 +114,8 @@ export const projects = [
     ],
     description:
       "A full-stack event management and ticketing platform that allows users to create, manage, and register for events with secure authentication, real-time updates, and QR-based digital ticketing for seamless check-in.",
-    liveLink: "https://eventhub-live-link.com/",
-    githubLink: "https://github.com/your-username/eventhub",
+    liveLink: "https://event-hub-beta-six.vercel.app/",
+    githubLink: "https://github.com/Shantosifat/eventHub",
     challenges:
       "Designing a secure and reliable QR code ticketing workflow, implementing scalable server actions, integrating Clerk authentication, optimizing Prisma database queries, and resolving dependency conflicts between React and Next.js versions.",
     improvements:
