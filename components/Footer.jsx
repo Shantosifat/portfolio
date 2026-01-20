@@ -1,10 +1,29 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Footer = ({ isDarkMode }) => {
+  const socialLinks = [
+    {
+      icon: FaFacebookF,
+      url: "https://www.facebook.com/mdrakibul.islamshanto.71",
+    },
+    {
+      icon: FaLinkedinIn,
+      url: "https://www.linkedin.com/in/md-rakibul-islam-shanto",
+    },
+    {
+      icon: FaInstagram,
+      url: "https://www.instagram.com/mdtrakibulislamshanto",
+    },
+  ];
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -28,10 +47,14 @@ const Footer = ({ isDarkMode }) => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className={`text-2xl font-bold ${isDarkMode ? "text-white" : "text-black"}`}>
+          <h2
+            className={`text-2xl font-bold ${isDarkMode ? "text-white" : "text-black"}`}
+          >
             RIS<span className="text-lime-600">.</span>
           </h2>
-          <p className={`mt-2 text-sm ${isDarkMode ? "text-gray-400" : "text-gray-800"}`}>
+          <p
+            className={`mt-2 text-sm ${isDarkMode ? "text-gray-400" : "text-gray-800"}`}
+          >
             MERN Stack Developer crafting dynamic & user-friendly web apps.
           </p>
         </motion.div>
@@ -44,10 +67,12 @@ const Footer = ({ isDarkMode }) => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          {[FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram].map((Icon, index) => (
+          {socialLinks.map(({ icon: Icon, url }, index) => (
             <motion.a
               key={index}
-              href="#"
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="transition-colors"
               whileHover={{ scale: 1.2, color: "#84cc16" }}
             >
@@ -79,7 +104,9 @@ const Footer = ({ isDarkMode }) => {
       {/* Divider + Copyright */}
       <motion.div
         className={`border-t mt-8 pt-6 text-center text-sm transition-colors duration-500 ${
-          isDarkMode ? "border-gray-700 text-gray-400" : "border-gray-300 text-gray-500"
+          isDarkMode
+            ? "border-gray-700 text-gray-400"
+            : "border-gray-300 text-gray-500"
         }`}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

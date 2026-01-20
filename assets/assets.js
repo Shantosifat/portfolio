@@ -101,6 +101,33 @@ export const workData = [
 
 export const projects = [
   {
+    name: "MediCall",
+    image: "https://i.postimg.cc/jq6HJ7MW/telemedicine-service-online-video-call-doctor-actively-chat-with-patient-31965-57978.jpg",
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Clerk Authentication",
+      "Tailwind CSS",
+      "ShadCN UI",
+      "Radix UI",
+      "React Hook Form",
+      "Zod",
+      "Date-fns",
+      "Server Actions",
+    ],
+    description:
+      "A full-stack doctor appointment booking platform with role-based access control (Admin, Doctor, Patient). Patients can browse verified doctors, view real-time availability, book consultations,  while admins can review, approve, or reject doctor registrations.",
+    liveLink: "https://medicalldoctor.vercel.app//",
+    githubLink: "https://github.com/Shantosifat/mediCall-doctor",
+    challenges:
+      "Implementing role-based authorization, building an admin review workflow for doctor verification, handling dynamic availability, preventing double-booking with precise time-slot overlap logic, managing secure credit transactions, and structuring Next.js server actions efficiently.",
+    improvements:
+      "Add Stripe-based credit purchase, real-time notifications using WebSockets, automated email/SMS reminders, multi-day availability scheduling, audit logs for admin actions, and an analytics dashboard for doctors.",
+  },
+  {
     name: "EventHub",
     image: "https://i.postimg.cc/ryPHX45c/pexels-vishnurnair-1105666-1.jpg",
     techStack: [
