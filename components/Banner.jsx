@@ -79,7 +79,7 @@ const Banner = ({ isDarkMode }) => {
         </a>
         {mounted && (
           <a
-            href="/resume.pdf"
+            href="/resume_Shanto.pdf"
             download
             className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 "
           >
